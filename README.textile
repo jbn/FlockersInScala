@@ -8,12 +8,12 @@ h2. Running
 If you are not interested in the tutorial or prefer to read the code first,
 you may run setup and run this project by running:
 
-<code>
+<pre><code>
 git clone git://github.com/jbn/FlockersInScala.git
 cd FlockersInScala/
 ./setup_mason.sh
 sbt run
-</code>
+</code></pre>
 
 You will be asked to select which executable (main class) to run. For the 
 Simulation with GUI, select <tt>com.pathdependent.flockers.FlockersWithUI</tt>.
