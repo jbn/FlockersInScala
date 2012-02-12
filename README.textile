@@ -8,8 +8,7 @@ h2. Running
 If you are not interested in the tutorial or prefer to read the code first,
 you may run setup and run this project by running:
 
-<pre><code>
-git clone git://github.com/jbn/FlockersInScala.git
+<pre><code>git clone git://github.com/jbn/FlockersInScala.git
 cd FlockersInScala/
 ./setup_mason.sh
 sbt run
