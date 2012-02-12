@@ -1,0 +1,4 @@
+h1. Flockers In Scala
+
+This is an implementation of a boids-like flocking simulation, written
+as part of "a tutorial demonstrating the use of MASON from Scala":http://pathdependent.com/computational_social_sciences/using-mason-from-scala/.
