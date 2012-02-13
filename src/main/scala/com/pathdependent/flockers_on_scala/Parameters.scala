@@ -14,10 +14,10 @@ import sim.util.Interval
  * the getXXX, setXXX methods in Scala code; the code is generated after the 
  * parsing step.)
  *
- * Unlike as in the reference example, I did not handcraft setter methods that
- * ignored bad values. In my version, you can enter bad values. This was mostly
- * out of laziness. (Although, I don't approve of ignoring bad parameters; they
- * should generate ArgumentExceptions.)
+ * Sean Luke's implementation handcrafted setter methods that ignored bad 
+ * In my version, you can enter bad values. This was mostly out of laziness. 
+ * (Although, I don't like the idea of ignoring bad parameters; I would prefer
+ * that they generate ArgumentExceptions.)
  */
 case class FlockerParameters(
   @BeanProperty var flockSize:                    Int = 200,
@@ -33,14 +33,15 @@ case class FlockerParameters(
   @BeanProperty var jumpDistance:              Double = 0.7,
   @BeanProperty var visitationRecordIncrement: Double = 0.01
 ){
-   def domFlockSize(): Object = new Interval(1, 10000)
-   def domCohesionWeight(): Object = new Interval(0.0, 1.0)
-   def domAvoidanceWeight(): Object = new Interval(0.0, 1.0)
-   def domRandomnessWeight(): Object = new Interval(0.0, 1.0)
-   def domConsistencyWeight(): Object = new Interval(0.0, 1.0)
-   def domMomentumWeight(): Object = new Interval(0.0, 1.0)
-   def domDeadFlockerProbability(): Object = new Interval(0.0, 1.0)
-   def domNeighborhoodRadius(): Object = new Interval(1.0, 30.0)
-   def domJumpDistance(): Object = new Interval(0.0, 1.0)
+   def domFlockSize():               Object = new Interval(1, 10000)
+   def domCohesionWeight():          Object = new Interval(0.0, 1.0)
+   def domAvoidanceWeight():         Object = new Interval(0.0, 1.0)
+   def domRandomnessWeight():        Object = new Interval(0.0, 1.0)
+   def domConsistencyWeight():       Object = new Interval(0.0, 1.0)
+   def domMomentumWeight():          Object = new Interval(0.0, 1.0)
+   def domDeadFlockerProbability():  Object = new Interval(0.0, 1.0)
+   def domNeighborhoodRadius():      Object = new Interval(1.0, 30.0)
+   def domJumpDistance():            Object = new Interval(0.0, 1.0)
    def domVisitationRecordIncrement: Object = new Interval(0.0, 0.05)
 }
+
